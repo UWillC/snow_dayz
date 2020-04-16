@@ -1,5 +1,11 @@
 # SNOW_DayZ
 
+# Prerequsits
+
+Minimal System Requirements are listed on official website, to host the server Operating System must be fro Windows Server 2012 up to Windows Server 2019 as well as Winsows 10.
+
+DirectX must be installed on the machine https://www.microsoft.com/en-us/download/details.aspx?id=35
+
 DayZ Server settings files... prepared based on official post on forum located in https://forums.dayz.com/topic/239635-dayz-server-files-documentation/?tab=comments#comment-2396573
 
 DayZ Server Files:
