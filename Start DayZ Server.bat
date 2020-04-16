@@ -1,7 +1,7 @@
 @echo off
 ECHO Starting DayZ Server
 
-start "" "DayZServer_x64.exe" -instanceId=1 -config=serverDZ.cfg -profiles=ServerName -port=2302 -cpuCount=8 -noFilePatching -dologs -adminlog -freezecheck
+start "" "DayZServer_x64.exe" -instanceId=1 -config=serverDZ.cfg -profiles=ServerName -port=2302 -cpuCount=4 -noFilePatching -dologs -adminlog -freezecheck
 
 REM PARAMETERS FOR DayZ Server
 REM -config=serverDZ.cfg - Selects the Server Config File
