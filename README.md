@@ -28,4 +28,4 @@ BEServer_x64.cfg - needs to be in the same folder as BEServer_x64.dll.The locati
 
 Start DayZ Server.bat - batch file to run the server, before each run server is checking for updates
 
-Update DayZ.bat - batch file to initialy run empty server and update if needed
+Update DayZ.bat - batch file to initialy run empty server and update if needed, verification of the server install is done on this step, when some files are missing from the server this batch file will fix it
