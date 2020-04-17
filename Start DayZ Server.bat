@@ -1,7 +1,30 @@
 @echo off
-ECHO Starting DayZ Server
+	:: DEFINE the following variables where applicable to your install
+    SET SteamLogin=USERNAME PASSWORD
+    SET DayZBranch=223350
+    SET DayZServerPath="C:\Servers\DayZ"
+    SET SteamCMDPath="C:\Servers\steamcmd"
+	:: _______________________________________________________________
 
-start "" "DayZServer_x64.exe" -instanceId=1 -config=serverDZ.cfg -profiles=SNOW_DayZ -port=2302 -cpuCount=4 -noFilePatching -dologs -adminlog -freezecheck
+echo.
+echo     Checking for DayZ server update
+echo        DayZ Server Dir: %DayZServerPath%
+echo        SteamCMD Dir: %SteamCMDPath%
+echo.
+
+%SteamCMDPath%\steamcmd.exe +login %SteamLogin% +force_install_dir %DayZServerPath% +"app_update %DayZBranch%" +quit
+
+echo .
+echo     Your DayZ server is up to date
+echo .
+echo      Starting DayZ server
+echo .
+
+start DayZServer_x64.exe -instanceId=1 -config=serverDZ.cfg -profiles=SNOW_DayZ -port=2305 -cpuCount=4 -noFilePatching -dologs -adminlog -freezecheck
+
+echo .
+echo      Server DayZ Started
+echo .
 
 REM PARAMETERS FOR DayZ Server
 REM -config=serverDZ.cfg - Selects the Server Config File
