@@ -22,7 +22,6 @@ echo .
 
 start DayZServer_x64.exe -instanceId=1 -config=serverDZ.cfg -profiles=SNOW_DayZ -port=2305 -cpuCount=4 -noFilePatching -dologs -adminlog -freezecheck
 
-echo .
 echo      Server DayZ Started
 echo .
 
