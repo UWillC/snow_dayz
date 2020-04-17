@@ -11,6 +11,6 @@ Next create two (2) folders in DayZ\SNOW_DayZ and subfolders
     | Players
     | Roles
     
-Using steamrep.com find your steam id and create file inside PermissionsFramework\Permissions\steamidnumber.txt and inside this file give respective permissions.
+Using steamrep.com find your steam id and create file inside PermissionsFramework\Permissions\steamIDnumber.txt and inside this file give respective permissions.
 
-Next in PermissionsFramework\Players add admin player with GUID and steamID.
+Next in PermissionsFramework\Players add admin player with GUID and steamID with the name steamIDnumber.json
