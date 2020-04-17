@@ -1,0 +1,9 @@
+{
+    "Names": [
+    ],
+    "GUID": "",
+    "Steam64ID": "",
+    "Roles": [
+    	"admin"
+    ]
+}
