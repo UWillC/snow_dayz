@@ -24,6 +24,8 @@ serverDZ.cfg - The file usually is located in the root directory of the server b
 
 dayzsettings.xml - provides number of worker threads for jobsystem by "maxcores" and "reservedcores" parameters
 
-Start DayZ Server.bat - batch file to run the server
-
 BEServer_x64.cfg - needs to be in the same folder as BEServer_x64.dll.The location of this folder can be customized via the startup parameters -bePath and -profiles.
+
+Start DayZ Server.bat - batch file to run the server, before each run server is checking for updates
+
+Update DayZ.bat - batch file to initialy run empty server and update if needed
