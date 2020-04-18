@@ -2,13 +2,56 @@
 
 ## List of the mods and updateing the mods
 
-Mods will be posted in the file Mods.txt and while running new batch file mods will be updated and if not installed they will be installed in the specified folder.
+Mods will be posted in the file Modlist.txt and while running new batch file mods will be updated and if not installed they will be installed in the specified folder.
 
 # [@CF](https://steamcommunity.com/sharedfiles/filedetails/?id=1559212036&searchtext=cf)
 
 Extract archive to the DayZ folder, copy key file from the @CF/keys to the DayZ/keys folder and then delete the keys folder inside @CF
 
 Add -mod=@CF to the start batch file
+
+# [@Trader](https://steamcommunity.com/sharedfiles/filedetails/?id=1590841260&searchtext=trader)
+
+This mode must be placed in the Modlist.txt file after the @CF mod and before any admin mod.
+
+Copy @Trader\ServerProfileFolder\Trader folder to the folder with the name of your instance and then edit the item database which is located in the mpmission folder \mpmissions\dayzOffline.chernarusplus\db\types.xml for the vehicles lifetime extended to 45 days (value 3888000) and to add currency to the spawning items on the map so the players will be able to find some in the loot.
+
+Each respective vehicle which will be avaiable in the traders office must have all respetcive parts included in the config and for each position in types.xml the lifetime must be extended.
+
+Example types.xml with the currency of 1 and 5 rubles spawning configured...
+
+```
+	<type name="MoneyRuble1">
+		<nominal>150</nominal>
+		<lifetime>7200</lifetime>
+		<restock>0</restock>
+		<min>100</min>
+		<quantmin>1</quantmin>
+		<quantmax>100</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="tools"/>
+		<tag name="shelves"/>
+		<usage name="Town"/>
+		<usage name="Village"/>
+		<usage name="Hunting"/>
+	</type>
+	<type name="MoneyRuble5">
+		<nominal>150</nominal>
+		<lifetime>7200</lifetime>
+		<restock>0</restock>
+		<min>100</min>
+		<quantmin>1</quantmin>
+		<quantmax>100</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="tools"/>
+		<tag name="shelves"/>
+		<usage name="Town"/>
+		<usage name="Village"/>
+		<usage name="Hunting"/>
+	</type>
+```
 
 # [@Community-Online-Tools](https://steamcommunity.com/sharedfiles/filedetails/?id=1564026768&searchtext=cf)
 
@@ -111,3 +154,7 @@ Next in PermissionsFramework\Players add admin player with GUID and steamID with
     ]
 }
 ```
+
+# [@BuildAnywhere](https://steamcommunity.com/sharedfiles/filedetails/?id=1574054508&searchtext=build)
+
+No specific configuration for this mod is required.
