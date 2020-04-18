@@ -1,5 +1,9 @@
 # Mods installed on the server
 
+## List of the mods and updateing the mods
+
+Mods will be posted in the file Mods.txt and while running new batch file mods will be updated and if not installed they will be installed in the specified folder.
+
 # [@CF](https://steamcommunity.com/sharedfiles/filedetails/?id=1559212036&searchtext=cf)
 
 Extract archive to the DayZ folder, copy key file from the @CF/keys to the DayZ/keys folder and then delete the keys folder inside @CF
