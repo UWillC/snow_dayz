@@ -13,7 +13,7 @@ Modlist_1.txt OPTIONAL if you would like to run different set of mods running on
 
 Make the copy of the mission which you would like to run as a second server i.e.
 
-dayzOffline_1.chernarusplus
+dayzOffline_1.chernarusplus OPTIONAL if you would like to run the same map on second server
 
 ## BEC
 
