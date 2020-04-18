@@ -25,6 +25,7 @@ Using steamrep.com find your steam id and create file inside PermissionsFramewor
 
 ##### steamIDnumber.txt
 
+```
 Admin 2
 Admin.Player 2
 Admin.Player.Read 2
@@ -88,11 +89,13 @@ Weather.SetOvercast 2
 Weather.SetFog 2
 Weather.SetRain 2
 Weather.SetStorm 2
+```
 
 Next in PermissionsFramework\Players add admin player with GUID and steamID with the name steamIDnumber.json
 
 ##### steamIDnumber.json
 
+```
 {
     "Names": [
     ],
@@ -102,3 +105,4 @@ Next in PermissionsFramework\Players add admin player with GUID and steamID with
     	"admin"
     ]
 }
+```
