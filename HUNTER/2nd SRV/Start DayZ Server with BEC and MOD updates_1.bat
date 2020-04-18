@@ -2,7 +2,7 @@
 TITLE DayZ SA Server - Status (Server 2)
 COLOR 0A
 	:: DEFINE the following variables where applicable to your install
-    SET SteamLogin=uwillc_pl p14k26AHS
+    SET SteamLogin=USERNAME PASSWORD
     SET DayZBranch=223350
     SET DayZServerPath="C:\Servers\DayZ"
     SET SteamCMDPath="C:\Servers\steamcmd"
