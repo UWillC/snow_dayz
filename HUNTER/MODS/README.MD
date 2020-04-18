@@ -1,12 +1,12 @@
 # Mods installed on the server
 
-# @CF
+# [@CF](https://steamcommunity.com/sharedfiles/filedetails/?id=1559212036&searchtext=cf)
 
 Extract archive to the DayZ folder, copy key file from the @CF/keys to the DayZ/keys folder and then delete the keys folder inside @CF
 
 Add -mod=@CF to the start batch file
 
-# @Community-Online-Tools
+# [@Community-Online-Tools](https://steamcommunity.com/sharedfiles/filedetails/?id=1564026768&searchtext=cf)
 
 If we have already CF installed there is no need for the key to be copied because this mode was done by the same developer, just delete the key folder.
 
