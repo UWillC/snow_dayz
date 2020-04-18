@@ -2,10 +2,10 @@
 TITLE DayZ SA Server - Status
 COLOR 0A
 	:: DEFINE the following variables where applicable to your install
-    SET SteamLogin=AccountUsername AccountPassword
+    SET SteamLogin=uwillc_pl p14k26AHS
     SET DayZBranch=223350
     SET DayZServerPath="C:\Servers\DayZ"
-    SET SteamCMDPath="C:\Servers\SteamCMD"
+    SET SteamCMDPath="C:\Servers\steamcmd"
 	SET BECPath="C:\Servers\BEC"
 	:: _______________________________________________________________
 
@@ -37,6 +37,7 @@ goto checkServer
 :killServer
 taskkill /f /im Bec.exe
 taskkill /f /im DayZServer_x64.exe
+taskkill /f /im DZSALModServer.exe
 goto updateServer
 
 :updateServer
@@ -62,7 +63,7 @@ timeout 1 >nul
 cls
 echo Starting DayZ SA Server...
 cd "%DayZServerPath%"
-start DayZServer_x64.exe -instanceId=1 -config=serverDZ.cfg -profiles=ServerName -port=2302 -cpuCount=8 -noFilePatching -dologs -adminlog -freezecheck
+start DZSALModServer.exe -instanceId=1 -config=serverDZ.cfg -profiles=SNOW_DayZ -port=2305 -mod=@CF;@CommunityOnlineTools -cpuCount=4 -noFilePatching -dologs -adminlog -freezecheck
 FOR /l %%s IN (45,-1,0) DO (
 	cls
 	echo Initializing server, wait %%s seconds to initialize BEC.. 
