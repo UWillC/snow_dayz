@@ -207,3 +207,50 @@ From the file located in the plugin directory named cfgspawnabletypes(NOT A REPL
 Next all the items must be aadded to the types.xml from the plugin file named types(NOT A REPLACER).xml ccopy the content to the db folder in specific mission i.e. \mpmissions\dayzOffline.chernarusplus\db\types.xml but in this step be carefull because file has some additional lines which should be deleted, basically copy only below content to the [types.xml](/HUNTER/MODS/chernarus/types.xml) file... in the charnorus repository.
 
 And the last step is to modify the trader plugin where in the file located in the server profile all items must be added \DayZ\SNOW_DayZ\Trader\traderconfig.txt - respective file is uploaded [here](/HUNTER/MODS/SNOW_DayZ/Trader/TraderConfig.txt) because there is a lot of changes based on the item type. It was identified by the name of the item where it should belong to but some items may be misplaced, it must be verified in-game. Moreover some items were put to Misc Trader with the Category Mass's ManyItemOverhaul and they should be also verified and placed to the proper categories while verified in game. To ease the identification of all these items price was set to 1000 buy value and 5 sell value (1000, 5).
+
+# [@VanillaPlusPlusMap](https://steamcommunity.com/sharedfiles/filedetails/?id=1623711988&searchtext=vanilla)
+
+Mod do not need specific configuration unless you want to configure server markers which will be visible on the map.
+File is located in the server profile folder \DayZ\SNOW_DayZ\VPPMapConfig.json
+
+```
+{
+    "M_STATIC_MARKER_ARRAY": [
+        {
+            "M_MARKER_NAME": "Green Mountain Trader",
+            "M_ICON_PATH": "VanillaPPMap\\GUI\\Textures\\CustomMapIcons\\shopping.paa",
+            "M_COLOR": [
+                0,
+                0,
+                255
+            ],
+            "M_POSITION": [
+                3700,
+                0,
+                5970
+            ],
+            "M_ISACTIVE": 1,
+            "M_IS_3D_ACTIVE": 1
+        },
+        {
+            "M_MARKER_NAME": "Loot Stash",
+            "M_ICON_PATH": "VanillaPPMap\\GUI\\Textures\\CustomMapIcons\\waypointeditor_CA.paa",
+            "M_COLOR": [
+                255,
+                255,
+                255
+            ],
+            "M_POSITION": [
+                7400,
+                0,
+                7200
+            ],
+            "M_ISACTIVE": 0,
+            "M_IS_3D_ACTIVE": 0
+        }
+    ],
+    "m_CanUse3DMarkers": 1,
+    "m_OwnPositionMarkerDisabled": 0,
+    "m_ForceMapItemOnly": 0
+}
+```
