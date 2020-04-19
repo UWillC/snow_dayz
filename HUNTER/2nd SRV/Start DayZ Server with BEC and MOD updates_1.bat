@@ -34,7 +34,7 @@ goto startBEC
 :loopServer
 FOR /L %%s IN (30,-1,0) DO (
 	cls
-	echo Server is running. Checking again in %%s seconds..
+	echo Server 2 is running. Checking again in %%s seconds..
 	timeout 1 >nul
 )
 goto checkServer
@@ -68,7 +68,7 @@ timeout 1 >nul
 cls
 echo Starting DayZ SA Server...
 cd "%DayZServerPath%"
-start DZSALModServer_1.exe -dayzserver=DayZServer_x64_1.exe -instanceId=2 -config=serverDZ_1.cfg -profiles=SNOW_Livonia -port=2306 -mod=!MODS_TO_LOAD!% -cpuCount=4 -noFilePatching -dologs -adminlog -freezecheck
+start DZSALModServer_1.exe -dayzserver=DayZServer_x64_1.exe -instanceId=2 -config=serverDZ_1.cfg -profiles=SNOW_Livonia -port=2304 -mod=!MODS_TO_LOAD!% -cpuCount=4 -noFilePatching -dologs -adminlog -freezecheck
 FOR /l %%s IN (45,-1,0) DO (
 	cls
 	echo Initializing server, wait %%s seconds to initialize BEC..
